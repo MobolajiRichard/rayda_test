@@ -28,7 +28,7 @@ const Card = (data: DataProps) => {
   };
 
   return (
-    <div data-testid='item' className="border border-gray-300 rounded-lg h-[300px] font-plex  mt-3 p-2 flex flex-col">
+    <div data-testid='item' className="border border-gray-300 rounded-lg font-plex  mt-3 p-2 flex flex-col">
       <img
         className="h-[120px] bg-[#F2F4F7] rounded-lg"
         alt="items"

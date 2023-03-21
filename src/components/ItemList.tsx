@@ -9,9 +9,9 @@ const ItemList = () => {
 //   content to display if data is loading
   if (isLoading) {
     return (
-      <div className="flex flex-col md:flex-row justify-between h-full w-full mt-4">
+      <div className="flex flex-col md:flex-row justify-between h-[60em] items-center w-full mt-7 md:mt-4 md:items-start">
         {new Array(4).fill(Infinity).map((_, i) => (
-          <Skeleton key={i} variant="rectangular" width={210} height={150} />
+          <Skeleton key={i} variant="rectangular" width={240} height={200} />
         ))}
       </div>
     );
