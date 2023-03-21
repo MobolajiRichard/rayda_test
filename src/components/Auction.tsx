@@ -16,7 +16,7 @@ const Auction = () => {
             className=" h-[130px] w-[130px] shadow-sm rounded-full absolute top-[15%] left-[30%] md:top-[50%] md:ml-7 md:left-0"
           />
           <div className="md:ml-[18%] flex flex-col items-center md:items-start w-full">
-            <p className="text-sm md:text-lg font-bold font-plex text-[#101828]">
+            <p className="text-[24px] md:text-lg font-bold font-plex text-[#101828]">
               Starts in 3 days : 2 hours : 24 minutes
             </p>
             <div className="flex items-center">
