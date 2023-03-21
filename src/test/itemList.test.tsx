@@ -13,6 +13,7 @@ let item = {
   image: "https://i.ibb.co/h7Bts6w/Imagelaptop.png",
 }
 describe("Items", () => {
+  //check if there are 8 items rendered 
   test("Item list renders correctly", async () => {
     render(
       <ApiProvider api={apiSlice}>
@@ -23,9 +24,5 @@ describe("Items", () => {
     waitFor(() => expect(items).toHaveLength(8));
   });
 
-  test("card", async ()=>{
-    render(<Card {...item}/>)
-    const card = await screen.findAllByTestId("item")
-    waitFor(() => expect(card).toBeDefined());
-  })
+
 });

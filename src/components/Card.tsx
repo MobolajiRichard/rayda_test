@@ -47,11 +47,11 @@ const Card = (data: DataProps) => {
           <span className="font-normal text-[#98A2B3]">(Highest Bidder)</span>
         </p>
       </div>
-      <p className="text-[#101828] text-[13px] font-bold mt-2">{data.title}</p>
-      <p className="text-[12px] ttext-[#344054] pb-2 mt-2 border-b border-gray-200">
+      <p className="text-[11px] font-bold mt-2">{data.title}</p>
+      <p className="text-[12px] text-[#344054] pb-2 mt-2 border-b border-gray-200">
         Current Bid: <span className="font-bold">{data.bid}</span>
       </p>
-      <button className="bg-[#004CCC] mt-2  text-white rounded-md text-[12px] p-2 font-bold">
+      <button className="hover:bg-[#004CCC] mt-2 shadow-sm  text-white rounded-md text-[12px] p-2 font-bold bg-blue-600">
         Add to wishlist
       </button>
     </div>
