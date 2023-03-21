@@ -1,5 +1,5 @@
 import { Avatar } from "@mui/material";
-import image from "../assets/image.png";
+import image from "../assets/Image.png";
 import furniture from "../assets/furniture.png";
 import samsung from "../assets/samsung.png";
 import apple from "../assets/apple.png";
