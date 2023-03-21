@@ -1,9 +1,12 @@
 import layers from "../assets/Layers.png";
+import gradient from "../assets/gradient.png";
 
 const Auction = () => {
   return (
     <div className="mt-8 h-[250px] w-full border border-gray-200 rounded-lg shadow-sm p-2 md:p-5 relative">
-      <div className="h-2/3 bg-gradient-to-r from-purple-600 via-purple-500 to-orange-400 rounded-lg relative"></div>
+      <img
+
+        className="h-2/3 rounded-lg relative w-full" src={gradient} />
       <div className="flex flex-col md:flex-row justify-between mt-1 md:mt-4 items-center">
         <div className="flex h-full w-full">
           <img
@@ -29,7 +32,7 @@ const Auction = () => {
           </div>
         </div>
 
-        <div className="flex border border-gray-300 items-center w-[8em] h-8 p-1 rounded-md">
+        <div className="flex border border-gray-300 items-center w-[8em] h-8 p-1 rounded-md cursor-pointer hover:shadow-sm ">
           <svg
             width="19"
             height="20"
@@ -45,7 +48,9 @@ const Auction = () => {
               stroke-linejoin="round"
             />
           </svg>
-          <p className="text-[12px] font-bold ml-2 font-plex text-[#344054]">Accept Invite</p>
+          <p className="text-[12px] font-bold ml-2 font-plex text-[#344054]">
+            Accept Invite
+          </p>
         </div>
       </div>
     </div>
