@@ -12,8 +12,7 @@ type DataProps = {
 };
 
 const Card = (data: DataProps) => {
-
-//function to get the correct image the api response is returning image not found
+  //function to get the correct image the api response is returning image not found
   const getCorrectImage = (text: string) => {
     if (text.includes("Samsung")) {
       return samsung;
@@ -29,7 +28,7 @@ const Card = (data: DataProps) => {
   };
 
   return (
-    <div className="border border-gray-300 rounded-lg h-[300px] font-plex  mt-3 p-2 flex flex-col">
+    <div data-testid='item' className="border border-gray-300 rounded-lg h-[300px] font-plex  mt-3 p-2 flex flex-col">
       <img
         className="h-[120px] bg-[#F2F4F7] rounded-lg"
         alt="items"
