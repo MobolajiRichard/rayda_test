@@ -44,7 +44,7 @@ const Card = (data: DataProps) => {
         </Avatar>
         <p className="font-bold text-[10px] text-[#475467] ml-2">
           {data.name}
-          <span className="font-normal text-[#98A2B3]">(Highest Bidder)</span>
+          <span className="font-normal text-[#98A2B3]"> (Highest Bidder)</span>
         </p>
       </div>
       <p className="text-[11px] font-bold mt-2">{data.title}</p>

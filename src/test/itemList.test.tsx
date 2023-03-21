@@ -3,17 +3,28 @@ import { ApiProvider } from "@reduxjs/toolkit/dist/query/react";
 import { apiSlice } from "../api/apiSlice";
 import { describe, expect, test, it } from "vitest";
 import ItemList from "../components/ItemList";
-import Card from "../components/Card";
+import Header from "../components/Header";
+import Auction from "../components/Auction";
 
 
-let item = {
-  name: "Andrew Doe",
-  title: "Phone 8 - 256GB, 4G LTE, Green (Refurbished)",
-  bid: "₦141,999",
-  image: "https://i.ibb.co/h7Bts6w/Imagelaptop.png",
-}
+
 describe("Items", () => {
-  //check if there are 8 items rendered 
+  //check if the header is included in the ui
+  test("Header component renders correctly", async () => {
+    render(<Header/>);
+    const header= await screen.findByTestId("header");
+    waitFor(() => expect(header).toBeDefined());
+  });
+
+//check if the auction component is included in the ui
+  test("Auction component renders correctly", async () => {
+    render(<Auction/>);
+    const auction = await screen.findAllByTestId("auction");
+    waitFor(() => expect(auction).toBeDefined());
+  });
+
+
+  //check if there are 8 items listed after api calls
   test("Item list renders correctly", async () => {
     render(
       <ApiProvider api={apiSlice}>
